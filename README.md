@@ -1,37 +1,39 @@
-## Welcome to GitHub Pages
+# ARCADE: Android API Protection Mapping 
 
-You can use the [editor on GitHub](https://github.com/arcade-android/mappings/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+[Precise Android API Protection Mapping Derivation and Reasoning]()
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Yousra Aafer, Guanhong Tao, Jianjun Huang, Xiangyu Zhang, and Ninghui Li
+To appear in Proceedings of 25th ACM SIGSAC Conference on Computer and Communications Security (CCS'18), October' 2018.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Abstract
 
-```markdown
-Syntax highlighted code block
+The Android research community has long focused on 
+building an Android API permission specification, which
+can be leveraged by app developers to determine the optimum set of 
+permissions necessary for a correct and safe execution of their app.
+However, while prominent existing efforts provide a good approximation 
+of the permission specification, they suffer from a few shortcomings. 
+Dynamic approaches
+cannot generate complete results, although accurate for the particular
+execution. In contrast, static approaches provide better coverage,
+but produce imprecise mappings due to their lack of path-sensitivity. 
+In fact, in light of Android's access control complexity, the approximations
+ hardly abstract the actual co-relations between enforced protections. 
+To address this, we propose to precisely derive Android protection specification
+in a path-sensitive fashion, using a novel graph abstraction technique. 
+We further showcase how we can apply the generated maps 
+to tackle security issues through logical satisfiability reasoning.
+Our constructed maps for 4 Android Open Source Project (AOSP) images highlight the significance of
+our approach, as ~41% of APIs' protections cannot be correctly modeled 
+without our technique. 
 
-# Header 1
-## Header 2
-### Header 3
+## Protection Mappings
 
-- Bulleted
-- List
+[Android 6.0]()
+[Android 7.0]()
+[Android 7.1]()
 
-1. Numbered
-2. List
+### Contact
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/arcade-android/mappings/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Email: yaafer at purdue dot edu
