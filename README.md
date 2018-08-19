@@ -3,6 +3,7 @@
 [Precise Android API Protection Mapping Derivation and Reasoning]()
 
 Yousra Aafer, Guanhong Tao, Jianjun Huang, Xiangyu Zhang, and Ninghui Li
+
 To appear in Proceedings of 25th ACM SIGSAC Conference on Computer and Communications Security (CCS'18), October' 2018.
 
 
@@ -31,7 +32,9 @@ without our technique.
 ## Protection Mappings
 
 [Android 6.0]()
+
 [Android 7.0]()
+
 [Android 7.1]()
 
 ### Contact
